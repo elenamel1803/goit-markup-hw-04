@@ -145,7 +145,16 @@ img {
 .hero {
     background: var(--second-backgroun-color);
     padding-top: 200px;
-    padding-bottom: 200px;    
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/hero_bg.jpg);    
 }
 .hero-title{
     font-weight: 900;
@@ -267,7 +276,34 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    margin-bottom: 16px;
 }
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+.team-soc-item + .team-soc-item {
+    margin-left: 10px;
+}
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-soc-icon{
+    fill: #AFB1B8;
+}
+.team-soc-link:hover{
+    background-color: #2196F3;
+}
+.team-soc-link:hover .team-soc-icon{  
+    fill: #FFFFFF;
+}
+
 
 /* ----------------FOOTER---------------- */
 .footer{
